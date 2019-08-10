@@ -8,6 +8,25 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {}
+const removeNoneChars = function ( string ) {
+  return string.replace(/[^A-Za-z0-9]/g,'')
+}
+
+const sortString = function ( string ) {
+  return string.split('').sort().join('')
+}
+
+const anagrams = function (stringA, stringB) {
+  stringA = removeNoneChars(stringA)
+  stringB = removeNoneChars(stringB)
+
+  if (stringA.length !== stringB.length) return false
+
+  stringA = sortString( stringA.toLowerCase() )
+  stringB = sortString( stringB.toLowerCase() )
+
+  return stringA === stringB
+
+}
 
 module.exports = anagrams;
