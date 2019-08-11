@@ -25,7 +25,6 @@ class Node {
     this[insertTarget]
       ? this[insertTarget].insert(value)
       : this[insertTarget] = new Node(value)
-
   }
 
   contains( value ) {
