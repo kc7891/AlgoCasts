@@ -6,14 +6,14 @@ Companion repo to a course on Udemy.com
 npm test exercises/anagrams
 
 # Difficulties
-revserstring
-palindromes
-reverseInt
-maxchars
-fizzbuzz
-chunk
-anagram
-capitalization
+x revserstring
+x palindromes
+x reverseInt
+x maxchars
+x fizzbuzz
+x chunk
+x anagram
+x capitalization
 steps
 pyramid
 vowels
@@ -24,11 +24,11 @@ weave
 stacks
 linked lists
 midpoints
-circular
+x circular (改善の余地あり？）
 fromlast
 tree
 level width
-bst
+x bst
 validate
 events
 sorting
