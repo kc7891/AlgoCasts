@@ -17,6 +17,30 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+// O(n^2)
+// function steps(n) {
+//   for ( let step = 1; step <= n; step++ ) {
+//     let currentStep = ''
+//     for ( let col = 1; col <= n; col++ ) {
+//       currentStep += col <= step ? '#' : ' '
+//     }
+//     console.log( currentStep )
+//   }
+// }
+
+// O(n)
+function steps(n) {
+  let maxStepSymbol = ''
+  let maxEmptySymbol = ''
+  for ( let col = 1; col <= n; col++ ) {
+    maxStepSymbol += '#'
+    maxEmptySymbol += ' '
+  }
+
+  for ( let step = 1; step <= n; step++ ) {
+    console.log( maxStepSymbol.substr(0,step) + maxEmptySymbol.substr(step) )
+  }
+
+}
 
 module.exports = steps;
