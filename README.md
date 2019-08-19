@@ -14,8 +14,8 @@ x fizzbuzz
 x chunk
 x anagram
 x capitalization
-steps
-pyramid
+x steps
+x pyramid
 vowels
 matrix
 fibonacci
