@@ -7,6 +7,20 @@
 //   vowels('Why do you ask?') --> 4
 //   vowels('Why?') --> 0
 
-function vowels(str) {}
+// 0.191s,
+// 0.187s,
+// function vowels(str) {
+//   const strChars = str.split('')
+//   return strChars.reduce(( summary, currentValue )=> {
+//     return currentValue.match(/[aeiouAEIOU]/) ? ++summary : summary
+//   }, 0)
+// }
+
+// 0.198s
+// 0.162s
+function vowels(str) {
+  const replacedStr = str.replace(/[^aeiouAEIOU]/g,'')
+  return replacedStr.length
+}
 
 module.exports = vowels;
