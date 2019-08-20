@@ -16,7 +16,7 @@ x anagram
 x capitalization
 x steps
 x pyramid
-vowels
+x vowels
 matrix
 fibonacci
 queue
