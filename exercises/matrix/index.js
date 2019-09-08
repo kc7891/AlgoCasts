@@ -26,9 +26,9 @@ function matrix(n) {
     // direction is depends on the current number of straight
     // The key number is calculated from straightNumber%4
     const directions = {
-        0: { target: 'y', distance: -1 },
+        0: { target: 'z', distance: -1 },
         1: { target: 'x', distance: 1 },
-        2: { target: 'y', distance: 1 },
+        2: { target: 'z', distance: 1 },
         3: { target: 'x', distance: -1 },
     }
 
